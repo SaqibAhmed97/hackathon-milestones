@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Editable Resume Builder</h1>
+    <form id="resume-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" placeholder="Enter your address" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <div id="education-fields">
+                <div class="education-entry">
+                    <label>Degree:</label>
+                    <input type="text" name="degree" placeholder="Enter your degree" required>
+                    
+                    <label>University/Institute:</label>
+                    <input type="text" name="university" placeholder="Enter your university/institute" required>
+                    
+                    <label>Year:</label>
+                    <input type="text" name="year" placeholder="Enter the year of graduation" required>
+                </div>
+            </div>
+            <button type="button" id="add-education">Add More Education</button>
+        </fieldset>        
+
+        <fieldset>
+            <legend>Experience</legend>
+            <div id="experience-fields">
+                <div class="experience-entry">
+                    <label>Job Title:</label>
+                    <input type="text" name="job-title" placeholder="Enter your job title" required>
+                    
+                    <label>Company:</label>
+                    <input type="text" name="company" placeholder="Enter your company" required>
+                    
+                    <label>Duration:</label>
+                    <input type="text" name="duration" placeholder="Enter the duration" required>
+                </div>
+            </div>
+            <button type="button" id="add-experience">Add More Experience</button>
+        </fieldset>        
+
+        <fieldset>
+            <legend>Skills</legend>
+            <div id="skills-fields">
+                <div class="skills-entry">
+                    <label>Skill:</label>
+                    <input type="text" name="skill" placeholder="Enter a skill" required>
+                </div>
+            </div>
+            <button type="button" id="add-skill">Add More Skills</button>
+        </fieldset>
+        
+        
+        <button type="submit"><b>Generate Resume</b></button>
+    </form>
+    <br>
+    <!-- Dynamic and Editable Resume -->
+    <div id="resume-display" contenteditable="true">
+        <!-- Resume will be generated below -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

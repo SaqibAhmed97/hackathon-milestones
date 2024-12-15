@@ -1,0 +1,119 @@
+/* Styling form and resume sections */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f1cece; /* Softer background for better contrast */
+    color: #000000; /* Default text color */
+}
+
+h1 {
+    text-align: center;
+    color: #2c350c; /* Darker color for better readability */
+    margin-bottom: 20px;
+}
+
+form {
+    margin: auto;
+    background-color: #adf384; /* Light blue for a clean look */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0, 4, 255);
+    padding: 20px;
+    max-width: 600px;
+    font-size: 16px;
+}
+
+fieldset {
+    border: 2px solid #d60606; /* Green border for distinction */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f814b4; /* Light green for better separation */
+}
+
+legend {
+    font-weight: bold;
+    color: #000000; /* Blue for visibility */
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #020202;
+    font: bold;
+}
+
+input,
+textarea {
+    margin-top: 4px;
+    padding: 10px;
+    width: calc(100% - 20px); /* Avoid overflow */
+    border: 1px solid #000000; /* Light blue border */
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical; /* Allows resizing only vertically */
+}
+
+.education-entry {
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 10px;
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    background-color: #000000; /* Soft green button */
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-shadow: 0 1px 2px rgba(255, 0, 0, 0.2); /* Slight text shadow for depth */
+}
+
+button:hover {
+    background-color: #002fff; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+#resume-display {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #440534; /* Bright green border */
+    border-radius: 8px;
+    background-color: #d6e07ab6; /* Softer green for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Making the resume editable*/
+    outline: none;
+}
+
+h3 {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+
+#resume-display h2 {
+    color: #000000; /* Consistent text color */
+    margin-bottom: 15px;
+}
+
+#resume-display p {
+    line-height: 1.5; /* Improved readability */
+    margin: 5px 0;
+    color: #000000;
+}
